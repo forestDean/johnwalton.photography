@@ -5,3 +5,7 @@ footer {
     border-top: 0;
     height: 40px;
 }
+
+.control {
+    margin-top: -12px;
+}

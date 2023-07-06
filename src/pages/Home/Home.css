@@ -10,10 +10,17 @@ main {
 }
 
 .square {
-    background-color: rgba(128, 128, 128, 0.103);
+    /* background-color: rgba(128, 128, 128, 0.103); */
     height: 450px;
     width: 450px !important;
     /* border: 1px dashed red */
+}
+
+#slideshowHome{
+    background-color: rgba(128, 128, 128, 0.103);
+    height: 450px;
+    width: 450px !important;
+    margin-left: -12px;
 }
 
 #galleryHome {
@@ -22,4 +29,18 @@ main {
 
 #contentMenu {
     margin-left: 10px;
+    background-color: rgba(255, 0, 0, 0.1)
+}
+
+.squareOverlay {
+ background-image: url("./../../images/overlays/squareOverlay.jpg");
+ height: 450px;
+ width: 450px;
+ opacity: 0.1;
+ /* margin-left: -12px; */
+
+ /* background-image: 'url(${overlay})'; */
+ /* background-size: cover;
+ background-position: center; */
+
 }
