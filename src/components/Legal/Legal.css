@@ -1,0 +1,19 @@
+/* LEGAL styles */
+
+section {
+    border: 1px dashed grey;
+    border-top: 0;
+    height: auto;
+    padding-top: 100px;
+    visibility: hidden;
+    display: none;
+}
+
+
+@media print {
+    section {
+        display: block;
+    }
+    
+ }
+ 
