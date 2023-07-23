@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import logo from '../../assets/graphics/jw_button_grey30.png';
 import { FaLinkedin, FaGithub, FaFacebook, FaEnvelope } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -25,7 +26,9 @@ const Header = () => {
               </a>
           </div>
               {/* <span className="mt-5 text-muted">John Walton Photography</span> */}
+              <Link to="/">
               <img src={logo} alt="next" className="logo float-end"/>
+              </Link>
           </Col>
         </Row>
       </header>
