@@ -1,6 +1,6 @@
+![license badge](https://img.shields.io/badge/License-AGPL_v3-yellow.svg?logo=gnu&logoColor=yellow&style=flat-square)
 ![react badge](https://img.shields.io/badge/ReactJS-v.18.2.0-purple.svg?logo=react&style=flat-square)
 ![cloudflare badge](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.webmanager.workers.dev/?projectName=johnwalton-photography)
-![license badge](https://img.shields.io/badge/License-AGPL_v3-yellow.svg?logo=gnu&logoColor=yellow&style=flat-square)
 
 # John Walton Photography - React
 
