@@ -15,7 +15,7 @@ import Legal from './components/Legal/Legal';
 const App = () => {
   return (
       <Router>
-        <Container className="mt-3 px-0">
+        <Container className="mt-5 px-0">
           <Header />
           {/* <Wrapper> */}
             <Routes>
