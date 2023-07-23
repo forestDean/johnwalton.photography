@@ -3,5 +3,12 @@
 .header {
 
     border-bottom: 0;
-    height: 35px;
+    height: 40px;
+}
+
+.socialIcon{
+    width: 25px;
+    height: 25px;
+    margin-right: 22px;
+    color: #b8b8b8;
 }
