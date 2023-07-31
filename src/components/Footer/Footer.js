@@ -10,9 +10,9 @@ const Footer = () => {
       <footer className="">
         <Row>
           <Col xs={12} className="text-center position-relative pt-3"> 
-            <img src={myButton} alt="previous" className="control float-start"/>        
+            <img src={myButton} alt="previous" className="control float-start swiper-button-prev"/>        
             <small className="text-muted">©<Moment format="YYYY" /> John Walton</small>
-            <img src={myButton} alt="next" className=" control float-end"/>
+            <img src={myButton} alt="next" className=" control float-end swiper-button-next"/>
           </Col>
         </Row>
       </footer>
