@@ -13,13 +13,24 @@ const SquareShow = () => {
         const swiperContainer = swiperRef.current;
         const params = {
           slidesPerView: 1,
-          spaceBetween: 10,
+          // spaceBetween: 10,
           effect: 'fade',
-          crossfade: true,
+          fadeEffect: {
+            crossFade: true
+          },
+          // effect: 'cube',
+          // cubeEffect: {
+          //   shadow: false,
+          // },
+          speed: 2000,
           loop: true,
+          grabCursor: true,
           autoplay: {
             delay: 4500,
             disableOnInteraction: false,
+          },
+          hashNavigation: {
+            watchState: true,
           },
           navigation: {
             nextEl: '.swiper-button-next',
@@ -37,7 +48,7 @@ const SquareShow = () => {
             init="false">
             
             {imageList.map((image, index) => (
-              <swiper-slide key={index}><img src={image} alt={`slide-${index}`} /></swiper-slide>
+              <swiper-slide key={index} data-hash={`slide-${index}`}><img src={image} alt={`slide-${index}`} /></swiper-slide>
             ))}
 
         </swiper-container>
