@@ -3,6 +3,9 @@ import './SquareShow.css';
 import { register } from "swiper/element/bundle";
 register();
 
+const images = require.context('../../images/square/previews', true);
+const imageList = images.keys().map(image => images(image));
+
 const SquareShow = () => {
     const swiperRef = useRef(null);
 
@@ -31,15 +34,12 @@ const SquareShow = () => {
   return (
         <swiper-container 
             ref={swiperRef} 
-            init="false"> 
-            <swiper-slide>Slide 1</swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
-            <swiper-slide>Slide 3</swiper-slide>
-            <swiper-slide>Slide 4</swiper-slide>
-            <swiper-slide>Slide 5</swiper-slide>
-            <swiper-slide>Slide 6</swiper-slide>
-            <swiper-slide>Slide 7</swiper-slide>
-            <swiper-slide>Slide 8</swiper-slide>
+            init="false">
+            
+            {imageList.map((image, index) => (
+              <swiper-slide key={index}><img src={image} alt={`slide-${index}`} /></swiper-slide>
+            ))}
+
         </swiper-container>
       );
     };
