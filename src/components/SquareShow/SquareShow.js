@@ -1,14 +1,26 @@
 import { useEffect, useRef } from "react";
+import { useLocation } from 'react-router-dom';
 import './SquareShow.css';
 import { register } from "swiper/element/bundle";
 register();
 
-const images = require.context('../../images/square/previews', true);
-const imageList = images.keys().map(image => images(image));
-console.table(imageList);
+
 
 const SquareShow = () => {
     const swiperRef = useRef(null);
+
+    const location = useLocation();
+    // Define a mapping of URLs to image sources
+    const imageMap = {
+      '/': require.context('../../images/square/previews', true), // Home page
+      '/about': require.context('../../images/about/previews', true), // About page
+      // Add more routes and corresponding image sources as needed
+    };
+    // Get the image source based on the current location
+    const imageSource = imageMap[location.pathname] || '../../images/overlays/squareOverlay.jpg';
+
+    const imageList = imageSource.keys().map(image => imageSource(image));
+    console.table(imageList);
 
     useEffect(() => {
         const swiperContainer = swiperRef.current;

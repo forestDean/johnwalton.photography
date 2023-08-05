@@ -5,6 +5,7 @@ import About from '../../pages/About/About';
 import EppingForest from '../../pages/EppingForest/EppingForest';
 import Contact from '../../pages/Contact/Contact'
 import Prints from '../../pages/Prints/Prints'
+// import NotFound from '../../pages/NotFound/NotFound'
 
 
 const Router = () => {
@@ -35,7 +36,11 @@ let element = useRoutes([
     {
         path: "contact", 
         element: <Contact />
-    }
+    },
+    // {
+    //     path: "*", 
+    //     element: <NotFound />
+    // }
  ]);
 // console.log(routesList);
 return element;
