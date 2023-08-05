@@ -16,12 +16,9 @@ const Home = () => {
             <SquareShow />
             </div>
           </Col>
-          <Col xs={6} className="square" id="contentMenu">
+          <Col xs={6} className="square" id="contentMenuHome">
             <div id="contentMenu">
-            <LinksMenu />
-
-
-
+              <LinksMenu />
             </div>  
           </Col>
 

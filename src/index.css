@@ -10,6 +10,11 @@ html{ overflow: scroll}
 	src: url('./assets/fonts/Helvetica/HelveticaLTStd-Roman.otf'); 
   } 
 
+  @font-face { 
+	font-family: Poppins; 
+	src: url('./assets/fonts/Poppins/Poppins-Regular.ttf'); 
+  } 
+
   body {
     font: 16px/24px 'Lato', Helvetica, Arial, sans-serif;
     background: #fff;
