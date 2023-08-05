@@ -5,6 +5,7 @@ register();
 
 const images = require.context('../../images/square/previews', true);
 const imageList = images.keys().map(image => images(image));
+console.table(imageList);
 
 const SquareShow = () => {
     const swiperRef = useRef(null);
@@ -29,9 +30,9 @@ const SquareShow = () => {
             delay: 4500,
             disableOnInteraction: false,
           },
-          hashNavigation: {
-            watchState: true,
-          },
+          // hashNavigation: {
+          //   watchState: true,
+          // }, // causing RangeError: Maximum call stack size exceeded.
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
