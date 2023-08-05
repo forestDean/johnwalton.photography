@@ -45,13 +45,13 @@
       "label": "cats",
       "path": "/cats",
       "element": "Cats",
-      "class": "unused"
+      "class": "unused strike"
     },
     {
       "label": "social",
       "path": "/social",
       "element": "Social",
-      "class": "unused"
+      "class": "unused strike"
     },
     {
       "label": "prints",
